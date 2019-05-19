@@ -1,4 +1,6 @@
-﻿namespace CustomForm
+﻿using System;
+
+namespace CustomForm
 {
     partial class GaussForm
     {
@@ -30,7 +32,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GaussForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gaussbtn = new System.Windows.Forms.Button();
+            this.iconBtn = new System.Windows.Forms.Button();
             this.lbltitle = new System.Windows.Forms.Label();
             this.btnmin = new System.Windows.Forms.Button();
             this.btnmax = new System.Windows.Forms.Button();
@@ -42,7 +44,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.gaussbtn);
+            this.panel1.Controls.Add(this.iconBtn);
             this.panel1.Controls.Add(this.lbltitle);
             this.panel1.Controls.Add(this.btnmin);
             this.panel1.Controls.Add(this.btnmax);
@@ -56,22 +58,21 @@
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseMove);
             // 
-            // gaussbtn
+            // iconBtn
             // 
-            this.gaussbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gaussbtn.Image = global::CustomForm.Resource1.gauss_sm;
-            this.gaussbtn.Location = new System.Drawing.Point(3, 0);
-            this.gaussbtn.Name = "gaussbtn";
-            this.gaussbtn.Size = new System.Drawing.Size(58, 58);
-            this.gaussbtn.TabIndex = 5;
-            this.gaussbtn.UseVisualStyleBackColor = true;
+            this.iconBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconBtn.Location = new System.Drawing.Point(3, 0);
+            this.iconBtn.Name = "iconBtn";
+            this.iconBtn.Size = new System.Drawing.Size(58, 58);
+            this.iconBtn.TabIndex = 5;
+            this.iconBtn.UseVisualStyleBackColor = true;
             // 
             // lbltitle
             // 
             this.lbltitle.AutoSize = true;
             this.lbltitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbltitle.Location = new System.Drawing.Point(179, 14);
+            this.lbltitle.Location = new System.Drawing.Point(81, 14);
             this.lbltitle.Name = "lbltitle";
             this.lbltitle.Size = new System.Drawing.Size(41, 25);
             this.lbltitle.TabIndex = 4;
@@ -92,7 +93,7 @@
             // btnmax
             // 
             this.btnmax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnmax.Image = global::CustomForm.Resources.Resource1.maxi;
+            this.btnmax.Image = ((System.Drawing.Image)(resources.GetObject("btnmax.Image")));
             this.btnmax.Location = new System.Drawing.Point(730, 19);
             this.btnmax.Margin = new System.Windows.Forms.Padding(0);
             this.btnmax.Name = "btnmax";
@@ -104,7 +105,7 @@
             // btnclose
             // 
             this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnclose.Image = global::CustomForm.Resources.Resource1.close;
+            this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
             this.btnclose.Location = new System.Drawing.Point(765, 19);
             this.btnclose.Margin = new System.Windows.Forms.Padding(0);
             this.btnclose.Name = "btnclose";
@@ -123,7 +124,7 @@
             this.panel2.Size = new System.Drawing.Size(800, 2);
             this.panel2.TabIndex = 1;
             // 
-            // Form1
+            // GaussForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -133,8 +134,8 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
-            this.Text = "Gaußsches Verfahren";
+            this.Name = "GaussForm";
+            this.Load += new System.EventHandler(this.GaussForm_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
@@ -143,7 +144,7 @@
             this.ResumeLayout(false);
 
         }
-
+              
         #endregion
 
         private System.Windows.Forms.Panel panel1;
@@ -151,7 +152,7 @@
         private System.Windows.Forms.Button btnmin;
         private System.Windows.Forms.Button btnmax;
         private System.Windows.Forms.Button btnclose;
-        private System.Windows.Forms.Button gaussbtn;
+        protected System.Windows.Forms.Button iconBtn;
         private System.Windows.Forms.Label lbltitle;
     }
 }
