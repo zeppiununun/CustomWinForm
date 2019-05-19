@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 /*
  * customized userForm, not resizable
@@ -14,11 +8,8 @@ namespace CustomForm
 {
     public partial class GaussForm : Form
     {
-        private Point mouseLocation;
-        private int oldHeight;
-        private int oldWidth;
-
-        public GaussForm()
+       private Point mouseLocation;
+       public GaussForm()
         {
             InitializeComponent();
             
