@@ -15,7 +15,8 @@ namespace CustomForm
     public partial class GaussForm : Form
     {
         private Point mouseLocation;
-        
+        private int oldHeight;
+        private int oldWidth;
 
         public GaussForm()
         {
@@ -40,7 +41,8 @@ namespace CustomForm
             }
             
         }
-        //close form    
+
+           //close form    
         private void Btnclose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -48,20 +50,30 @@ namespace CustomForm
         //fullsize
         private void Btnmax_Click(object sender, EventArgs e)
         {
-            if (this.WindowState == FormWindowState.Maximized)
-                this.WindowState = FormWindowState.Normal;
-            else
+            if (this.WindowState == FormWindowState.Normal)
+            {
                 this.WindowState = FormWindowState.Maximized;
-            Refresh();
+                Refresh();
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+                Refresh();
+            }
         }
         //minimize
         void Btnmin_Click(object sender, EventArgs e)
         {
-            if (this.WindowState == FormWindowState.Minimized)
-                this.WindowState = FormWindowState.Normal;
-            else
+            if ((this.WindowState == FormWindowState.Normal)|| (this.WindowState == FormWindowState.Maximized))
+            {
                 this.WindowState = FormWindowState.Minimized;
-            Refresh();
+                Refresh();
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+                Refresh();
+            }
         }
 
         //intercepting and forwarding "dragging events" 
