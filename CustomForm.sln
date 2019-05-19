@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomForm", "CustomForm\CustomForm.csproj", "{021B8F37-A755-4AA8-A14C-D4CC2F2B4E8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{021B8F37-A755-4AA8-A14C-D4CC2F2B4E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{021B8F37-A755-4AA8-A14C-D4CC2F2B4E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{021B8F37-A755-4AA8-A14C-D4CC2F2B4E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{021B8F37-A755-4AA8-A14C-D4CC2F2B4E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {721D0227-1104-421A-B491-B83FA81B25AE}
+	EndGlobalSection
+EndGlobal

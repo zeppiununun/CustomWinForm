@@ -1,0 +1,12 @@
+C:\Users\yatsy\Projects\CustomForm\CustomForm\bin\Debug\CustomForm.pdb
+C:\Users\yatsy\Projects\CustomForm\CustomForm\obj\Debug\CustomForm.csprojAssemblyReference.cache
+C:\Users\yatsy\Projects\CustomForm\CustomForm\obj\Debug\CustomForm.csproj.GenerateResource.cache
+C:\Users\yatsy\Projects\CustomForm\CustomForm\obj\Debug\CustomForm.csproj.CoreCompileInputs.cache
+C:\Users\yatsy\Projects\CustomForm\CustomForm\obj\Debug\CustomForm.pdb
+C:\Users\yatsy\Projects\CustomForm\CustomForm\obj\Debug\CustomForm.Resource1.resources
+C:\Users\yatsy\Projects\CustomForm\CustomForm\obj\Debug\CustomForm.Resource2.resources
+C:\Users\yatsy\Projects\CustomForm\CustomForm\obj\Debug\CustomForm.Resources.Resource1.resources
+C:\Users\yatsy\Projects\CustomForm\CustomForm\obj\Debug\CustomForm.GaussForm.resources
+C:\Users\yatsy\Projects\CustomForm\CustomForm\bin\Debug\CustomForm.dll.config
+C:\Users\yatsy\Projects\CustomForm\CustomForm\bin\Debug\CustomForm.dll
+C:\Users\yatsy\Projects\CustomForm\CustomForm\obj\Debug\CustomForm.dll
